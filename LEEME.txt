@@ -1,0 +1,14 @@
+ALKKON TEK - COTIZADOR
+
+Archivos (todos en la raiz del repo):
+  index.html      Version para ventas (sin costos ni parametros)
+  admin.html      Version administrador (abre en /admin)
+  api/params.js   Guarda y entrega los parametros compartidos
+  vercel.json
+
+Activar parametros compartidos (una sola vez):
+  1. Vercel > tu proyecto > Storage > Create Database > Upstash Redis. Conectalo al proyecto.
+  2. Settings > Environment Variables: crea ADMIN_PIN con el PIN que quieras.
+  3. Deployments > Redeploy.
+  4. Abre /admin, ajusta Parametros y pulsa "Publicar al equipo".
+Si no haces esto, la app funciona igual con los valores guardados en cada navegador.
